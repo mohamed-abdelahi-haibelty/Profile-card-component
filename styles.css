@@ -15,6 +15,9 @@ body{
     background-color: var(--Dark-cyan);
     font-size: 18px;
     font-family: 'Kumbh Sans', sans-serif;
+    background-image: url("images/bg-pattern-top.svg"),url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat,no-repeat;
+    background-position: right 51vw bottom 14vh,left 48vw top 54vh;
 }
 
 .container{
@@ -33,19 +36,21 @@ body{
 .bg-img img{
     width: 100%;
     border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 .profil-img{
-    width: 90px;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 100px;
+    aspect-ratio: 1/1;
     position: absolute;
     top: 135px;
-    border: 5px solid white;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 .profil-img img{
     width: 100%;
+    border-radius:50% !important;
+    border: 5px solid white;
 }
 .text{
     text-align: center;
@@ -75,4 +80,15 @@ body{
 }
 .followers span{
     color: var(--Dark-grayish-blue);
+}
+@media(min-width:600px){
+    .container{
+        width:350px;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
+    .bg-img{
+        width:350px;
+    }
 }
