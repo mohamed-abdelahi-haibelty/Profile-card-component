@@ -4,4 +4,15 @@
 --Dark-grayish-blue: hsl(227, 10%, 46%);
 --Dark-gray: hsl(0, 0%, 59%);
 }
-/*font-family: 'Kumbh Sans', sans-serif;*/
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Dark-cyan);
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
